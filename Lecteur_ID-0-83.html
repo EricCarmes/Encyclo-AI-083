@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Smartbook - AudioBook</title>
+  <link rel="stylesheet" href="plyr.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="ID-0-83-Couverture.jpg" alt="Couverture" style="width: 20%; height: auto; margin-bottom: 20px;">
+
+  <div class="logos">
+    <img src="PLANCHE-1a.jpg" alt="Logo AudioBook" style="width: 5%; height: auto; margin-bottom: 20px;">
+    <img src="Logo_resized.jpg" alt="Logo Encyclo-AI" style="width: 10%; height: auto; margin-bottom: 20px;">
+  </div>
+
+<!-- Bloc bouton Play + potentiomètre vitesse -->
+<div class="player-controls">
+  <!-- Gros bouton Play -->
+  <button id="bigPlayBtn" aria-label="Lire ou mettre en pause le livre audio">▶</button>
+
+  <!-- Bloc vitesse -->
+  <div id="speedControl">
+    <div class="speed-label">Vitesse</div>
+    <div class="speed-knob-wrapper">
+      <input type="range" id="speedKnob" min="0.9" max="1.1" step="0.05" value="1" orient="vertical">
+
+      <!-- Colonne repères alignés -->
+      <div id="speedLabels">
+        <span>++</span>
+        <span>+</span>
+        <span>=</span>
+        <span>-</span>
+        <span>--</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Lecteur audio -->
+  <audio id="audioPlayer" controls></audio>
+
+  <!-- Playlist -->
+  <ul id="playlist">
+    <li><a href="Introduction.mp3" style="font-weight: bold;">INTRODUCTION - L'ESSENCE DE LA VIE : UNE EXPLORATION DE L'ADN</a></li>
+
+    <li style="font-weight: bold;">Chapitre 1 - INTRODUCTION À L'ADN : LA MOLÉCULE DE LA VIE</li>
+    <ul>
+      <li><a href="Chapitre1-1.mp3">1.1 - Origine et Découverte de l'ADN</a></li>
+      <li><a href="Chapitre1-2.mp3">1.2 - Rôle Fondamental de l'ADN dans les Organismes Vivants</a></li>
+      <li><a href="Chapitre1-3.mp3">1.3 - Applications Modernes de l'Étude de l'ADN</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 2 - STRUCTURE DE L'ADN : DOUBLE HÉLICE ET NUCLÉOTIDES</li>
+    <ul>
+      <li><a href="Chapitre2-1.mp3">2.1 - Composition Chimique de l'ADN</a></li>
+      <li><a href="Chapitre2-2.mp3">2.2 - Organisation en Double Hélice</a></li>
+      <li><a href="Chapitre2-3.mp3">2.3 - Stabilité et Variabilité de l'ADN</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 3 - LES GÈNES : L'INFORMATION GÉNÉTIQUE</li>
+    <ul>
+      <li><a href="Chapitre3-1.mp3">3.1 - Définition et Structure des Gènes</a></li>
+      <li><a href="Chapitre3-2.mp3">3.2 - Fonctionnement des Gènes</a></li>
+      <li><a href="Chapitre3-3.mp3">3.3 - Régulation de l'Expression Génétique</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 4 - LA RÉPLICATION DE L'ADN : MÉCANISMES ET IMPORTANCE</li>
+    <ul>
+      <li><a href="Chapitre4-1.mp3">4.1 - Processus de Réplication de l'ADN</a></li>
+      <li><a href="Chapitre4-2.mp3">4.2 - Fidélité et Réparation de l'ADN</a></li>
+      <li><a href="Chapitre4-3.mp3">4.3 - Implications de la Réplication dans la Biologie et la Médecine</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 5 - MUTATIONS : ORIGINES ET CONSÉQUENCES</li>
+    <ul>
+      <li><a href="Chapitre5-1.mp3">5.1 - Types de Mutations</a></li>
+      <li><a href="Chapitre5-2.mp3">5.2 - Causes des Mutations</a></li>
+      <li><a href="Chapitre5-3.mp3">5.3 - Conséquences des Mutations</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 6 - L'EXPRESSION GÉNÉTIQUE : DE L'ADN AUX PROTÉINES</li>
+    <ul>
+      <li><a href="Chapitre6-1.mp3">6.1 - Transcription de l'ADN en ARN</a></li>
+      <li><a href="Chapitre6-2.mp3">6.2 - Traduction de l'ARN en Protéines</a></li>
+      <li><a href="Chapitre6-3.mp3">6.3 - Régulation de l'Expression des Protéines</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 7 - MÉDECINE PERSONNALISÉE ET GÉNOMIQUE</li>
+    <ul>
+      <li><a href="Chapitre7-1.mp3">7.1 - Bases de la Médecine Personnalisée</a></li>
+      <li><a href="Chapitre7-2.mp3">7.2 - Applications Cliniques de la Génomique</a></li>
+      <li><a href="Chapitre7-3.mp3">7.3 - Défis et Perspectives de la Médecine Génomique</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 8 - ÉTHIQUE ET DÉBATS SOCIÉTAUX AUTOUR DE LA GÉNÉTIQUE</li>
+    <ul>
+      <li><a href="Chapitre8-1.mp3">8.1 - Questions Éthiques de la Génétique</a></li>
+      <li><a href="Chapitre8-2.mp3">8.2 - Impact Sociétal des Découvertes Génétiques</a></li>
+      <li><a href="Chapitre8-3.mp3">8.3 - Réglementation et Politiques en Génétique</a></li>
+    </ul>
+
+    <li><a href="Conclusion.mp3" style="font-weight: bold;">CONCLUSION - L'HÉRITAGE DE L'ADN : RÉFLEXIONS ET PERSPECTIVES</a></li>
+  </ul>
+
+  <p><a href="ID-0-83-Annexes.pdf" target="_blank">📄 Consulter les annexes du livre</a></p>
+  <p><a href="mentions_legales.pdf">Mentions légales</a></p>
+
+  <script src="plyr.polyfilled.js"></script>
+  <script src="lecteur.js"></script>
+</body>
+</html>
